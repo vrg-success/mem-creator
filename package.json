@@ -1,0 +1,48 @@
+{
+  "name": "webpack_test",
+  "version": "1.0.0",
+  "description": "For React developments",
+  "main": "src/js/index.js",
+  "homepage": "http://frontendMetis.github.io/mem-creator",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --watch --display=minimal",
+    "deploy": "gh-pages -d ./src/"
+  },
+  "keywords": [],
+  "author": "FrontendMetis",
+  "license": "",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/polyfill": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.4.2",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^2.0.0",
+    "cssnano": "^4.1.7",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "react-error-overlay": "^5.1.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "connect-history-api-fallback": "^1.6.0",
+    "gh-pages": "^2.0.1",
+    "graphql-request": "^1.8.2",
+    "html2canvas": "^1.0.0-rc.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-color": "^2.17.0",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1"
+  }
+}

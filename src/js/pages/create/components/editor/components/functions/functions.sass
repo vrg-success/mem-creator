@@ -1,0 +1,98 @@
+.popupPhotoEditor
+  &__functions
+    display: flex
+    margin-bottom: 15px
+    flex-wrap: wrap
+    &>*:not(:last-of-type)
+      margin-right: 15px
+    label, .label
+      font-size: 13px
+      color: rgb(127, 143, 164)
+      display: inline-block
+      margin-bottom: 10px
+    select 
+      border: none
+      -webkit-appearance: none
+      -moz-appearance: none
+      background: transparent
+      cursor: pointer
+      width: 150px
+      height: 30px
+      background-image: url("data:image/svg+xml;utf8,<svg fill='rgb(40, 45, 76)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
+      background-repeat: no-repeat
+      background-position-x: 100%
+      background-position-y: 3px
+      border: 1px solid rgb(229, 229, 229)
+      color: #000 
+      font-size: 14px
+      padding-left: 5px
+      border-radius: 3px
+    input[type="number"]
+      border: none
+      width: 100%
+      height: 30px
+      padding: 0 5px
+      font-size: 14px
+      color: #000
+      border: 1px solid rgb(229, 229, 229)
+      border-radius: 3px
+    .fontAlign
+      &__items
+        display: flex
+        align-items: center
+      &__item
+        &:not(:last-of-type)
+          margin-right: 5px
+        button 
+          width: 30px
+          height: 30px
+          display: flex
+          align-items: center
+          justify-content: center
+          border: 1px solid rgb(229, 229, 229)
+          border-radius: 3px
+        .active
+          background: #e8e8e8
+    .colorPicker
+      text-align: center
+      button
+        width: 100%
+        height: 30px
+        border: 1px solid rgb(229, 229, 229)
+        border-radius: 3px
+        padding: 3px
+    .fontBorder, .fontSize, .lineHeight
+      width: 87px
+      text-align: center
+    .letterSpacing
+      width: 130px
+      text-align: center
+    .colorPickerWrapper
+      position: absolute
+      z-index: 2
+    .colorPickerCover
+      position: fixed 
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+    .tools
+      margin-right: 15px
+      &__items
+        display: flex
+        button 
+          width: 30px
+          height: 30px
+          display: flex
+          align-items: center
+          justify-content: center
+          border: 1px solid rgb(229, 229, 229)
+          border-radius: 3px
+    .tool
+      transition: all .15s ease
+      &:not(:last-of-type)
+        margin-right: 5px
+      &:hover
+        background: #e8e8e8
+      &__active
+        background: #e8e8e8

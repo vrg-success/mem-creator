@@ -1,0 +1,26 @@
+.memes
+  &__pagination
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    &_item
+      margin-bottom: 5px
+      &:not(:last-of-type)
+        margin-right: 5px
+      button 
+        width: 35px
+        height: 35px
+        font-size: 15px
+        color: #162a4e
+        border-radius: 3px
+        border: 1px solid #03c1dd
+        transition: all .25s ease
+        &:hover
+          background: rgb(3, 193, 221)
+          color: #fff 
+    .current-page
+      button 
+        font-family: OpenSansBold
+        background: rgb(3, 193, 221)
+        color: #fff
