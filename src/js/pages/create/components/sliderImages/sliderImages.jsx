@@ -40,13 +40,10 @@ class SliderImages extends Component {
       }
     `).then(data => {
       let sortedArray = [];
+      const chunksCount = Math.ceil(data.memLists.length / 6);
 
-      for (let i = 0; i < data.memLists.length / 6; i++) {
-        let sliceItems = data.memLists.slice(i * 6, 6).length < 6 ?
-          data.memLists.slice(i * 6) :
-          data.memLists.slice(i * 6, 6);
-
-        sortedArray.push(sliceItems);
+      for (let i = 0; i < chunksCount; i++) {
+        sortedArray.push(data.memLists.slice(i * 6, i * 6 + 6));
       }
 
       this.setState({
