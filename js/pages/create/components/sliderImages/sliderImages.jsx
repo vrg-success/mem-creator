@@ -30,7 +30,7 @@ class SliderImages extends Component {
 
     client.request(`
       {
-        memLists (orderBy: order_ASC) {
+        memLists (orderBy: order_DESC) {
           id,
           image {
             url
